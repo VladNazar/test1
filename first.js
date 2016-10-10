@@ -1,9 +1,10 @@
 function f(a,b)
 {
-    var a=arguments;
-    var n= a.length;
+    var n= arguments.length;
     for(var i=0;i<n;i++)
     {
-        console.log(a[i],"\n");
+        console.log(arguments[i]);
     }
 }
+
+f(1,2,3,3,undefined,3,3);
